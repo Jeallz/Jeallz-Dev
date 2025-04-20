@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background: #0e0e11;
+}
+main .container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .content {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  color: #fff;
+}
+main .container .content .profile {
+  background: url(../Imgs/profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 22vh;
+  height: 22vh;
+  border-radius: 50%;
+}
+main .container .content .text1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+main .container .content .text1 h1 {
+  text-align: center;
+  font-size: 30pt;
+}
+main .container .content .text1 span {
+  font-size: 30pt;
+}
+main .container .content .text2 p {
+  font-size: 20pt;
+}
+main .container .content .text2 p span {
+  color: #856652;
+  font-weight: 600;
+}
+main .container .content .icons {
+  width: 25%;
+  height: auto;
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .container .content .icons a {
+  text-decoration: none;
+}
+main .container .content .icons a img {
+  transition: 0.2s ease-in-out;
+}
+main .container .content .icons a img:hover {
+  transform: scale(1.1);
+}
+main .slider {
+  width: auto;
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #0e0e11;
+  box-shadow: inset -5px -5px 25px 0px rgba(0, 0, 0, 0.6901960784);
+}
+main .slider .slide-track {
+  width: 100%;
+  height: 100%;
+  animation: scroll 40s infinite linear;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 3500px;
+}
+main .slider .slide {
+  height: 100px;
+  width: 200px;
+  background-color: #0e0e11;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4862745098);
+}
+main .slider .slide:hover {
+  cursor: pointer;
+}
+main .slider .slide:hover img {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+  opacity: 1;
+}
+main .slider .an1 {
+  animation: float 3s infinite ease-in-out;
+}
+main .slider .an2 {
+  animation: float2 3s infinite ease-in-out;
+}
+main .projects {
+  padding: 10vh 1vh 10vh 1vh;
+  width: 100%;
+  height: auto;
+}
+main .projects .cards {
+  width: 100%;
+  height: auto;
+  padding: 10vh 0 10vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+main .projects .cards .card {
+  background-color: white;
+  width: 60vh;
+  height: 30vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .projects .cards .card:hover .banner {
+  transform: scale(1.1);
+}
+main .projects .cards .card:hover .banner .glass {
+  background: rgba(0, 0, 0, 0.8039215686);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+main .projects .cards .card:hover .banner .glass .content {
+  display: block;
+}
+main .projects .cards .card #nxtbots {
+  background: url(../Imgs/Banners/NXT_bots.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .projects .cards .card #nxtagencia {
+  background: url(../Imgs/Banners/NXT_agencia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .projects .cards .card #cafeteria {
+  background: url(../Imgs/Banners/cafeteria.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .projects .cards .card #coffee {
+  background: url(../Imgs/Banners/jeallscoffee.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .projects .cards .card #illusion {
+  background: url(../Imgs/Banners/illusion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .projects .cards .card .banner {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  background: url(../Imgs/Banners/NXT_bots.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .projects .cards .card .banner .glass {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .projects .cards .card .banner .glass .content {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  display: none;
+}
+main .projects .cards .card .banner .glass .content p {
+  padding: 0 0 3vh 0;
+}
+main .projects .cards .card .banner .glass .content h2 {
+  font-size: 22pt;
+  font-weight: 600;
+  padding: 0 0 1.5vh 0;
+}
+main .projects .cards .card .banner .glass .content a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0e0e11;
+  padding: 1vh 2vh 1vh 2vh;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+main .projects .cards .card .banner .glass .content a:hover {
+  padding: 1vh 3vh 1vh 3vh;
+}
+main .services {
+  width: 100%;
+  height: auto;
+}
+main .services .cards {
+  width: 100%;
+  height: auto;
+  padding: 10vh 0 10vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+main .services .cards .card {
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4862745098);
+  width: 20vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  gap: 1.5vh;
+  border-radius: 10px;
+}
+main .services .cards .card .title {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  gap: 2vh;
+}
+main .services .cards .card .title .img {
+  width: auto;
+  height: auto;
+  padding: 2vh;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4862745098);
+  border-radius: 10px;
+}
+main .services .cards .card .title h2 {
+  font-size: 15pt;
+}
+main .services .cards .card .content {
+  display: flex;
+  color: rgba(255, 255, 255, 0.768627451);
+  text-align: justify;
+}
+main .teste {
+  width: 100%;
+  height: 100vh;
+}
+main .const {
+  width: 100%;
+  height: auto;
+  padding: 2.5vh 2vh 2.5vh 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #f82b2b;
+  position: fixed;
+  bottom: 0;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.title h2 {
+  font-size: 20pt;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+@keyframes float2 {
+  0%, 100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0e0e11;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #856652;
+  border: 0px;
+  border-radius: 10px;
+}
+
+::selection {
+  background-color: rgba(70, 46, 31, 0.4784313725);
+}
+
+/*# sourceMappingURL=style.css.map */
