@@ -266,7 +266,7 @@ main {
         .cards2 {
             width: 100%;
             height: auto;
-            padding: 10vh 0 10vh 0;
+            padding: 10vh 2vh 10vh 2vh;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -412,6 +412,23 @@ main {
                 }
             }
         }
+
+        .slider {
+            height: 20vh;
+
+            .slide-track {
+                justify-content: space-evenly;
+
+                .slide {
+                    width: 150px;
+                    height: 75px;
+
+                    img {
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -431,6 +448,20 @@ main {
                     p {
                         font-size: 10pt;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        .projects {
+            .cards {
+                gap: 1vh;
+
+                .card {
+                    transform: scale(0.8);
                 }
             }
         }

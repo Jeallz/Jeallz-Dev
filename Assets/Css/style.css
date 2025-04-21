@@ -225,7 +225,7 @@ main .services {
 main .services .cards2 {
   width: 100%;
   height: auto;
-  padding: 10vh 0 10vh 0;
+  padding: 10vh 2vh 10vh 2vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -347,6 +347,19 @@ main .const {
   main .container .content .icons img {
     width: 25px;
   }
+  main .slider {
+    height: 20vh;
+  }
+  main .slider .slide-track {
+    justify-content: space-evenly;
+  }
+  main .slider .slide-track .slide {
+    width: 150px;
+    height: 75px;
+  }
+  main .slider .slide-track .slide img {
+    transform: scale(0.8);
+  }
 }
 @media (max-width: 430px) {
   main .container .content .text1 span {
@@ -357,6 +370,14 @@ main .const {
   }
   main .container .content .text2 p {
     font-size: 10pt;
+  }
+}
+@media (max-width: 400px) {
+  main .projects .cards {
+    gap: 1vh;
+  }
+  main .projects .cards .card {
+    transform: scale(0.8);
   }
 }
 
