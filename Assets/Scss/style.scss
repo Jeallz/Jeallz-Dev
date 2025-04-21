@@ -303,25 +303,39 @@ main {
             }
         }
     }
+}
 
-    .teste {
-        width: 100%;
-        height: 100vh;
-    }
+footer {
+    margin-bottom: 8vh;
+    width: 100%;
+    height: auto;
+    padding: 4vh 1vh 4vh 1vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: $background;
+    color: #fff;
+    box-shadow: inset -5px -5px 25px 0px #000000b0;
 
-    .const {
-        width: 100%;
-        height: auto;
-        padding: 2.5vh 2vh 2.5vh 2vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #fff;
-        background-color: #f82b2b;
-        position: fixed;
-        bottom: 0;
+    p {
+        span {
+            color: $primary;
+        }
     }
+}
+
+.const {
+    width: 100%;
+    height: auto;
+    padding: 2.5vh 2vh 2.5vh 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: #f82b2b;
+    position: fixed;
+    bottom: 0;
 }
 
 .title {
