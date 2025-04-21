@@ -163,13 +163,14 @@ main {
 
             a {
                 text-decoration: none;
+                width: 60vh;
+                height: 30vh;
+                border-radius: 10px;
+                overflow: hidden;
 
                 .card {
-                    background-color: white;
-                    width: 60vh;
-                    height: 30vh;
-                    border-radius: 10px;
-                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
     
                     &:hover {
                         .banner {

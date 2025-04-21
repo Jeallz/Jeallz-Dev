@@ -134,13 +134,14 @@ main .projects .cards {
 }
 main .projects .cards a {
   text-decoration: none;
-}
-main .projects .cards a .card {
-  background-color: white;
   width: 60vh;
   height: 30vh;
   border-radius: 10px;
   overflow: hidden;
+}
+main .projects .cards a .card {
+  width: 100%;
+  height: 100%;
 }
 main .projects .cards a .card:hover .banner {
   transform: scale(1.1);
