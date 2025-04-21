@@ -132,50 +132,53 @@ main .projects .cards {
   flex-wrap: wrap;
   gap: 5vh;
 }
-main .projects .cards .card {
+main .projects .cards a {
+  text-decoration: none;
+}
+main .projects .cards a .card {
   background-color: white;
   width: 60vh;
   height: 30vh;
   border-radius: 10px;
   overflow: hidden;
 }
-main .projects .cards .card:hover .banner {
+main .projects .cards a .card:hover .banner {
   transform: scale(1.1);
 }
-main .projects .cards .card:hover .banner .glass {
+main .projects .cards a .card:hover .banner .glass {
   background: rgba(0, 0, 0, 0.8039215686);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
-main .projects .cards .card:hover .banner .glass .content {
+main .projects .cards a .card:hover .banner .glass .content {
   display: block;
 }
-main .projects .cards .card #nxtbots {
+main .projects .cards a .card #nxtbots {
   background: url(../Imgs/Banners/NXT_bots.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .projects .cards .card #nxtagencia {
+main .projects .cards a .card #nxtagencia {
   background: url(../Imgs/Banners/NXT_agencia.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .projects .cards .card #cafeteria {
+main .projects .cards a .card #cafeteria {
   background: url(../Imgs/Banners/cafeteria.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .projects .cards .card #coffee {
+main .projects .cards a .card #coffee {
   background: url(../Imgs/Banners/jeallscoffee.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .projects .cards .card #illusion {
+main .projects .cards a .card #illusion {
   background: url(../Imgs/Banners/illusion.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .projects .cards .card .banner {
+main .projects .cards a .card .banner {
   width: 100%;
   height: 100%;
   transition: 0.3s ease-in-out;
@@ -183,7 +186,7 @@ main .projects .cards .card .banner {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .projects .cards .card .banner .glass {
+main .projects .cards a .card .banner .glass {
   width: 100%;
   height: 100%;
   transition: 0.3s ease-in-out;
@@ -192,29 +195,18 @@ main .projects .cards .card .banner .glass {
   flex-direction: column;
   justify-content: center;
 }
-main .projects .cards .card .banner .glass .content {
+main .projects .cards a .card .banner .glass .content {
   color: #fff;
   transition: 0.5s ease-in-out;
   display: none;
 }
-main .projects .cards .card .banner .glass .content p {
+main .projects .cards a .card .banner .glass .content p {
   padding: 0 0 3vh 0;
 }
-main .projects .cards .card .banner .glass .content h2 {
+main .projects .cards a .card .banner .glass .content h2 {
   font-size: 22pt;
   font-weight: 600;
   padding: 0 0 1.5vh 0;
-}
-main .projects .cards .card .banner .glass .content a {
-  text-decoration: none;
-  color: #fff;
-  background-color: #0e0e11;
-  padding: 1vh 2vh 1vh 2vh;
-  border-radius: 10px;
-  transition: 0.2s ease-in-out;
-}
-main .projects .cards .card .banner .glass .content a:hover {
-  padding: 1vh 3vh 1vh 3vh;
 }
 main .services {
   width: 100%;
