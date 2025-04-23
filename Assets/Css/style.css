@@ -259,7 +259,6 @@ main .services .cards2 .card .content {
 }
 
 footer {
-  margin-bottom: 8vh;
   width: 100%;
   height: auto;
   padding: 4vh 1vh 4vh 1vh;
@@ -278,7 +277,7 @@ footer p span {
   width: 100%;
   height: auto;
   padding: 2.5vh 2vh 2.5vh 2vh;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   text-align: center;
